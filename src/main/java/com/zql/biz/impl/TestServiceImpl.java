@@ -22,7 +22,7 @@ public class TestServiceImpl implements TestService {
         System.out.println();
         for (int i = 0; i < 1000; i++) {
             a++;
-//            System.out.println(a);
+            System.out.println(a);
         }
         System.out.println(a);
         return scoreMapper.scoreList();
