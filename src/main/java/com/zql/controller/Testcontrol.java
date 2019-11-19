@@ -12,13 +12,12 @@ import java.util.List;
 
 @Controller
 @RestController
-@RequestMapping("/test/")
 public class Testcontrol {
 
     @Resource
     private TestService testService;
 
-    @RequestMapping("test")
+    @RequestMapping("/test")
     public String test(){
         List<Score> scores = testService.scoreList();
         return JSON.toJSONString(scores);
